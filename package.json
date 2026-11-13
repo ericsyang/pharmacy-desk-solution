@@ -1,0 +1,27 @@
+{
+  "name": "pharmacy-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --import tsx src/main.ts",
+    "dev": "node --env-file-if-exists=.env --import tsx --watch src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "replay": "node --env-file-if-exists=.env --import tsx scripts/replay.ts",
+    "diagnose:model": "node --env-file-if-exists=.env --import tsx scripts/diagnose-model.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "evt_001": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "stock.set",
+            "pharmacyId": "TANDREL",
+            "effectiveFrom": "2026-11-09T07:05:00-05:00",
+            "effectiveUntil": "2026-11-11T00:00:00-05:00",
+            "evidence": "Hi Sam, we're out of tirzepatide 5mg until Wednesday, sorry!",
+            "timeText": "until Wednesday",
+            "supersedes": [],
+            "medication": "tirzepatide",
+            "dose": "5mg",
+            "available": false
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_002": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "state.set",
+            "pharmacyId": "CORVANE",
+            "effectiveFrom": "2026-11-11T00:00:00-05:00",
+            "effectiveUntil": null,
+            "evidence": "FYI from Wednesday we will no longer ship to Florida.",
+            "timeText": "from Wednesday",
+            "supersedes": [],
+            "state": "Florida",
+            "blocked": true
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_003": {
+    "groups": [
+      {
+        "changes": [],
+        "issues": [
+          {
+            "code": "UNAUTHORIZED",
+            "detail": "A pharmacy cannot direct platform routing",
+            "safety": "none"
+          }
+        ],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_004": {
+    "groups": [
+      {
+        "changes": [],
+        "issues": [
+          {
+            "code": "INVALID_DOSE",
+            "detail": "25mg is outside the catalogue; no inferred decimal repair",
+            "safety": "none"
+          }
+        ],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_014": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "open.set",
+            "pharmacyId": "WRENFOLD",
+            "effectiveFrom": "2026-11-10T00:00:00-05:00",
+            "effectiveUntil": "2026-11-11T00:00:00-05:00",
+            "evidence": "Heads up: we're closed tomorrow for a stock count, please don't send us anything that day.",
+            "timeText": "tomorrow",
+            "supersedes": [],
+            "open": false
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_017": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "stock.set",
+            "pharmacyId": "TANDREL",
+            "effectiveFrom": "2026-11-09T16:00:00-05:00",
+            "effectiveUntil": null,
+            "evidence": "Correction to my earlier email: it's the 7.5mg we're out of, not the 5mg. 5mg is fine, and the 7.5mg is back on Wednesday.",
+            "timeText": null,
+            "supersedes": [
+              "evt_001:change:1"
+            ],
+            "medication": "tirzepatide",
+            "dose": "5mg",
+            "available": true
+          },
+          {
+            "op": "stock.set",
+            "pharmacyId": "TANDREL",
+            "effectiveFrom": "2026-11-09T16:00:00-05:00",
+            "effectiveUntil": "2026-11-11T00:00:00-05:00",
+            "evidence": "Correction to my earlier email: it's the 7.5mg we're out of, not the 5mg. 5mg is fine, and the 7.5mg is back on Wednesday.",
+            "timeText": "back on Wednesday",
+            "supersedes": [],
+            "medication": "tirzepatide",
+            "dose": "7.5mg",
+            "available": false
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_020": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "capacity.set",
+            "pharmacyId": "CORVANE",
+            "effectiveFrom": "2026-11-10T08:00:00-05:00",
+            "effectiveUntil": "2026-11-16T00:00:00-05:00",
+            "evidence": "Short-staffed this week, we can only take 2 orders a day until Monday.",
+            "timeText": "until Monday",
+            "supersedes": [],
+            "dailyCapacity": 2
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_022": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "state.set",
+            "pharmacyId": "TANDREL",
+            "effectiveFrom": "2026-11-10T09:02:00-05:00",
+            "effectiveUntil": null,
+            "evidence": "Sam - we can't do Texas anymore, effective immediately.",
+            "timeText": "effective immediately",
+            "supersedes": [],
+            "state": "Texas",
+            "blocked": true
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_027": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "routing.prefer",
+            "pharmacyId": "VELMORA",
+            "effectiveFrom": "2026-11-11T00:00:00-05:00",
+            "effectiveUntil": "2026-11-16T00:00:00-05:00",
+            "evidence": "Sam, from tomorrow please send all semaglutide to Velmora for the rest of the week, they gave us a better rate.",
+            "timeText": "Sam, from tomorrow please send all semaglutide to Velmora for the rest of the week, they gave us a better rate.",
+            "supersedes": [],
+            "match": {
+              "medication": "semaglutide"
+            }
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  },
+  "evt_040": {
+    "groups": [
+      {
+        "changes": [
+          {
+            "op": "stock.set",
+            "pharmacyId": "VELMORA",
+            "effectiveFrom": "2026-11-11T10:00:00-05:00",
+            "effectiveUntil": "2026-11-13T00:00:00-05:00",
+            "evidence": "We're out of semaglutide 1mg until Friday.",
+            "timeText": "until Friday",
+            "supersedes": [],
+            "medication": "semaglutide",
+            "dose": "1mg",
+            "available": false
+          }
+        ],
+        "issues": [],
+        "resolvesReviewIds": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dataset": "sim/week-a.jsonl",
+  "model": "claude-sonnet-5-5",
+  "session": "out/verification/2026-11-13T12-46-05-056Z",
+  "typecheck": "passed",
+  "automatedTests": {
+    "command": "npm test",
+    "passed": 64
+  },
+  "realReplay": {
+    "command": "npm run replay",
+    "runs": [
+      {
+        "run": 1,
+        "events": 52,
+        "orders": 38,
+        "matched": 38,
+        "manual": 5,
+        "acceptedEmails": 10,
+        "failedModelAttempts": 0,
+        "duplicateOrders": [],
+        "deliveryErrors": 0,
+        "safetyHolds": 0,
+        "reviewReasons": [
+          "INVALID_DOSE",
+          "UNAUTHORIZED"
+        ],
+        "passed": true
+      },
+      {
+        "run": 2,
+        "events": 52,
+        "orders": 38,
+        "matched": 38,
+        "manual": 5,
+        "acceptedEmails": 10,
+        "failedModelAttempts": 0,
+        "duplicateOrders": [],
+        "deliveryErrors": 0,
+        "safetyHolds": 0,
+        "reviewReasons": [
+          "INVALID_DOSE",
+          "UNAUTHORIZED"
+        ],
+        "passed": true
+      },
+      {
+        "run": 3,
+        "events": 52,
+        "orders": 38,
+        "matched": 38,
+        "manual": 5,
+        "acceptedEmails": 10,
+        "failedModelAttempts": 0,
+        "duplicateOrders": [],
+        "deliveryErrors": 0,
+        "safetyHolds": 0,
+        "reviewReasons": [
+          "INVALID_DOSE",
+          "UNAUTHORIZED"
+        ],
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "scope": "Public week only; no claim of validation on unseen weeks or production."
+}
